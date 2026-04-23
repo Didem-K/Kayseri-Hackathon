@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(wmic logicaldisk *)",
+      "Bash(npm run *)",
+      "Bash(curl -s http://localhost:3000/api/projects)",
+      "Bash(curl -s -X POST http://localhost:3000/api/ai/breakdown -H 'Content-Type: application/json' -d '{\"description\":\"Build a DeFi yield aggregator that automatically moves funds between protocols to maximize returns\"}')",
+      "Bash(python3 -m json.tool)",
+      "Bash(curl -s -X POST http://localhost:3000/api/ai/breakdown -H \"Content-Type: application/json\" -d '{\"description\":\"Build a DeFi yield aggregator\"}')",
+      "Bash(curl -s -X POST http://localhost:3000/api/project/create -H 'Content-Type: application/json' -d '{ *)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\('Task 0 status:', d['project']['tasks'][0]['status'], '| Assignee:', d['project']['tasks'][0].get\\('assigneeName','—'\\)\\)\")",
+      "Bash(pkill -f \"next dev\")"
+    ]
+  }
+}
